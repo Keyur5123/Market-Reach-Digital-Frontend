@@ -7,40 +7,40 @@ import { Helmet } from 'react-helmet';
 const services = [
   {
     icon: TrendingUp,
-    title: 'SEO',
-    description: 'Boost your organic rankings and drive qualified traffic to your website.',
-    features: ['Keyword Research', 'On-Page SEO', 'Technical SEO', 'Link Building']
+    title: 'Search Engine Optimisation (SEO)',
+    description: 'Boost your organic visibility and drive qualified traffic with our comprehensive SEO strategies.',
+    features: ['Strategic Keyword Research & Analysis', 'On-Page SEO Optimization', 'Authority Building & Link Building', 'Technical SEO & Site Performance', 'Local SEO & Business Listings', 'SEO Analytics & Growth Tracking']
   },
   {
     icon: Users,
-    title: 'Social Media Marketing',
-    description: 'Engage your audience and build a strong brand presence across all platforms.',
-    features: ['Content Creation', 'Community Management', 'Paid Social Ads', 'Analytics']
+    title: 'Social Media Brand Building & Engagement',
+    description: 'Build a strong brand presence and engage with your audience across multiple social media platforms.',
+    features: ['Brand-Focused Content Strategy', 'Platform-Specific Brand Optimization', 'Video Marketing & Storytelling', 'Community Management & Brand Advocacy', 'Performance Analytics & Brand Insights']
   },
   {
     icon: Zap,
-    title: 'Google Ads',
-    description: 'Get instant visibility and drive immediate results with targeted advertising.',
-    features: ['Search Ads', 'Display Campaigns', 'Shopping Ads', 'Performance Max']
+    title: 'PPC & Meta Ads Campaigns',
+    description: 'Drive targeted traffic and conversions with expertly managed campaigns across Google Ads, Meta platforms, and YouTube to accelerate your business growth.',
+    features: ['Google Ads Management', 'Meta Advertising Excellence', 'Strategic Campaign Funnels', 'Advanced Audience Targeting', 'ROI Optimization & Reporting']
   },
   {
     icon: TrendingUp,
     title: 'Website Development',
-    description: 'Create fast, responsive websites that convert visitors into customers.',
+    description: 'Create fast, responsive, and conversion-optimized websites that drive business growth.',
     features: ['Custom Design', 'Mobile-First', 'Fast Loading', 'SEO-Optimized']
   },
   {
     icon: Users,
     title: 'Content Strategy',
-    description: 'Develop compelling content that resonates with your target audience.',
+    description: 'Develop compelling content that resonates with your audience and drives engagement.',
     features: ['Content Planning', 'Blog Writing', 'Video Scripts', 'Email Campaigns']
   }
 ]
 
 const stats = [
-  { number: '150+', label: 'Clients Served' },
-  { number: '95%', label: 'Client Retention' },
-  { number: '300%', label: 'Average ROI Increase' },
+  { number: '150k+', label: 'Revenue Generated for Clients' },
+  { number: '165%', label: 'Average ROI Increase' },
+  { number: '98%', label: 'Campaign Success Rate' },
   { number: '24/7', label: 'Support Available' }
 ]
 
@@ -72,7 +72,7 @@ export default function HomePage() {
   return (
     <>
       <Helmet>
-        <title>Digital Marketing Agency | SEO, Google Ads & Social Media - MarketReach Digital</title>
+        <title>Digital Marketing Agency in Melbourne | SEO, Google Ads & Social Media - MarketReach Digital</title>
         <meta name="description" content="Get more leads with MarketReach Digital – Australia’s strategic digital marketing agency. Experts in SEO, Google Ads, social media, and web design." />
       </Helmet>
       <div className="overflow-hidden">

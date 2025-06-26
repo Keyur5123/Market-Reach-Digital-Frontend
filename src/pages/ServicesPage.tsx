@@ -8,7 +8,7 @@ const services = [
   {
     icon: Search,
     title: 'Search Engine Optimization (SEO)',
-    description: 'Boost your organic visibility and drive qualified traffic with our comprehensive SEO strategies.',
+    description: 'We help your business dominate local search results and attract customers actively looking for your services. Our comprehensive SEO strategies combine technical optimization, strategic keyword targeting, and authority building to increase your online visibility and drive qualified traffic that converts into sales.',
     features: [
       'Keyword Research & Analysis',
       'On-Page SEO Optimization',
@@ -18,42 +18,40 @@ const services = [
       'Content Optimization',
       'Performance Tracking'
     ],
-    pricing: 'Starting at $1,500/month'
+    // pricing: 'Starting at $1,500/month'
   },
   {
     icon: Users,
     title: 'Social Media Marketing',
-    description: 'Build a strong brand presence and engage with your audience across all social platforms.',
+    description: 'We amplify your brand presence across Instagram, Facebook, TikTok, and LinkedIn to build authentic connections with your ideal customers. Our data-driven social media strategies create engaging content that sparks conversations, builds brand loyalty, and turns followers into paying customers for your Melbourne business.',
     features: [
       'Social Media Strategy',
       'Content Creation & Design',
-      'Community Management',
       'Paid Social Advertising',
       'Influencer Partnerships',
       'Analytics & Reporting',
       'Brand Monitoring'
     ],
-    pricing: 'Starting at $1,200/month'
+    // pricing: 'Starting at $1,200/month'
   },
   {
     icon: Zap,
-    title: 'Google Ads Management',
-    description: 'Get instant visibility and drive immediate results with expertly managed Google Ads campaigns.',
+    title: 'PPC & Meta Ads Campaigns',
+    description: 'We drive qualified leads and sales to your business through strategic pay-per-click campaigns on Google and targeted Meta advertising across Facebook and Instagram. Our PPC specialists maximize your ad spend efficiency while our Meta ads experts create compelling campaigns that reach your ideal customers where they spend their time, helping Melbourne businesses generate immediate results and sustainable growth.',
     features: [
-      'Search Campaigns',
-      'Display Advertising',
-      'Shopping Ads',
-      'Performance Max',
-      'Remarketing',
+      'Google Search Campaigns',
+      'Facebook & Instagram Ads',
+      'Meta Shopping Campaigns',
+      'Retargeting & Remarketing',
+      'Conversion Tracking & Analytics',
       'Landing Page Optimization',
-      'Conversion Tracking'
     ],
-    pricing: 'Starting at $1,000/month + ad spend'
+    // pricing: 'Starting at $1,000/month + ad spend'
   },
   {
     icon: Globe,
     title: 'Website Development',
-    description: 'Create fast, responsive, and conversion-optimized websites that drive business growth.',
+    description: 'We create high-performance, AI-driven websites that convert visitors into customers. Our Melbourne-based team builds fast-loading, mobile-optimized sites using cutting-edge technology that search engines love, ensuring your business ranks higher and attracts more qualified leads.',
     features: [
       'Custom Website Design',
       'Mobile-First Development',
@@ -63,12 +61,12 @@ const services = [
       'Performance Optimization',
       'Ongoing Maintenance'
     ],
-    pricing: 'Starting at $5,000'
+    // pricing: 'Starting at $5,000'
   },
   {
     icon: PenTool,
     title: 'Content Strategy',
-    description: 'Develop compelling content that resonates with your audience and drives engagement.',
+    description: 'We develop strategic content that speaks directly to your target audience and drives meaningful engagement. Our content experts craft compelling blog posts, video scripts, and email campaigns that build trust with your customers and guide them through every stage of their buying journey.',
     features: [
       'Content Planning & Strategy',
       'Blog Writing & SEO',
@@ -78,22 +76,20 @@ const services = [
       'Copywriting Services',
       'Content Distribution'
     ],
-    pricing: 'Starting at $800/month'
+    // pricing: 'Starting at $800/month'
   },
   {
     icon: BarChart,
     title: 'Analytics & Reporting',
-    description: 'Get detailed insights into your marketing performance with comprehensive analytics and reporting.',
+    description: 'We provide comprehensive data insights that transform your marketing performance into actionable business intelligence. Our Melbourne-based analytics experts set up advanced tracking systems, create custom dashboards, and deliver detailed reports that show exactly how your digital marketing investments are driving revenue growth and customer acquisition for your business.',
     features: [
-      'Google Analytics Setup',
-      'Conversion Tracking',
-      'Custom Dashboards',
-      'Monthly Reporting',
-      'Performance Analysis',
-      'ROI Tracking',
-      'Recommendations'
+      'Monthly Performance Reports',
+      'ROI & Revenue Attribution',
+      'Data-Driven Recommendations',
+      'Real-Time Performance Monitoring',
+      'Marketing Attribution Modeling'
     ],
-    pricing: 'Starting at $500/month'
+    // pricing: 'Starting at $500/month'
   }
 ]
 
@@ -101,7 +97,7 @@ export default function ServicesPage() {
   return (
     <>
       <Helmet>
-        <title>SEO, PPC, Social Media Marketing – MarketReach Digital</title>
+        <title>SEO, PPC, Meta ads, Social Media Marketing Agency in Melbourne – MarketReach Digital</title>
         <meta name="description" content="Explore our digital marketing services including SEO, Google Ads management, and social media strategies tailored for growth." />
       </Helmet>
       <div className="min-h-screen">
@@ -163,17 +159,27 @@ export default function ServicesPage() {
                     </ul>
                   </div>
 
-                  <div className="flex items-center justify-between">
-                    <div className="text-lg font-semibold gradient-text">
+                  {/* <div className="w-full"> */}
+                  {/* <div className="text-lg font-semibold gradient-text">
                       {service.pricing}
-                    </div>
-                    <Button
+                    </div> */}
+                  {/* <Button
                       asChild
                       className="bg-gradient-to-r from-brand-pink-500 to-brand-purple-500 text-white hover:opacity-90"
                     >
                       <Link to="/contact">Get Started</Link>
                     </Button>
+                  // </div> */}
+
+                  <div className="w-full">
+                    <Button
+                      asChild
+                      className="w-full bg-gradient-to-r from-brand-pink-500 to-brand-purple-500 text-white hover:opacity-90"
+                    >
+                      <Link to="/contact">Get Started</Link>
+                    </Button>
                   </div>
+
                 </motion.div>
               ))}
             </div>
@@ -255,10 +261,10 @@ export default function ServicesPage() {
               className="text-center bg-gradient-to-r from-brand-pink-500 via-brand-purple-500 to-brand-blue-500 rounded-2xl p-12 text-white"
             >
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Ready to Get Started?
+                Ready to Dominate Melbourne's Market?
               </h2>
               <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-                Let's discuss which services are right for your business and create a custom strategy.
+                Let's create a custom digital marketing strategy that drives real results for your Melbourne business.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -267,7 +273,7 @@ export default function ServicesPage() {
                   size="lg"
                   className="bg-white text-brand-purple-600 hover:bg-gray-100 text-lg px-8 py-6"
                 >
-                  <Link to="/contact">Get Free Consultation</Link>
+                  <Link to="/contact">Schedule Free Strategy Call</Link>
                 </Button>
 
                 <Button
@@ -276,7 +282,7 @@ export default function ServicesPage() {
                   size="lg"
                   className="border-2 border-white text-white hover:bg-white hover:text-brand-purple-600 text-lg px-8 py-6"
                 >
-                  <Link to="/case-studies">View Case Studies</Link>
+                  <Link to="/case-studies">Explore Case Studies</Link>
                 </Button>
               </div>
             </motion.div>
