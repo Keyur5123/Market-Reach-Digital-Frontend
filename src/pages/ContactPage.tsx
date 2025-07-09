@@ -3,6 +3,7 @@ import { Mail, Phone, MapPin, Clock, Send, CheckCircle } from 'lucide-react'
 import { Button } from '../components/ui/button'
 import { useState } from 'react'
 import { Helmet } from 'react-helmet';
+import { log } from 'console';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -24,10 +25,28 @@ export default function ContactPage() {
     }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    // Here you would typically send the form data to your backend
-    console.log('Form submitted:', formData)
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    try {
+      e.preventDefault()
+
+      const res = await fetch(import.meta.env.VITE_API_SERVER_URL!, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      });
+
+      if (!res.ok) {
+        throw new Error('Failed to submit data');
+      }
+
+      const result = await res.json();
+      console.log("Response :", result);
+    } catch (err) {
+      console.log("error :", err);
+    }
+
     setIsSubmitted(true)
 
     // Reset form after 3 seconds
@@ -51,7 +70,7 @@ export default function ContactPage() {
         <title>Contact Us | MarketReach Digital – Your Marketing Partner</title>
         <meta name="description" content="Get in touch with MarketReach Digital to discuss how our digital marketing services can help your business thrive in the online landscape." />
       </Helmet>
-      
+
       <div className="min-h-screen">
         {/* Hero Section */}
         <section className="section-padding bg-gradient-to-b from-muted/30 to-background">
