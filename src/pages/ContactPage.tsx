@@ -29,14 +29,14 @@ export default function ContactPage() {
     try {
       e.preventDefault()
 
-      const res = await fetch(import.meta.env.VITE_API_SERVER_URL!, {
+      const res = await fetch(import.meta.env.VITE_API_PROD_SERVER_URL, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
         },
         body: JSON.stringify(formData)
       });
-
+      
       if (!res.ok) {
         throw new Error('Failed to submit data');
       }
